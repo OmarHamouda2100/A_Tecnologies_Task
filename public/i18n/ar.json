@@ -1,0 +1,35 @@
+{
+  "numberParent": {
+    "title": "عرض الرقم",
+    "langButton": "English"
+  },
+  "table": {
+    "appointmentDate": "تاريخ التعيين",
+    "cancelAppointmentDate": "تاريخ إلغاء التعيين",
+    "responsibleAppointment": "المسؤول عن التعيين",
+    "localMins": "الدقائق المحلية",
+    "internationalMins": "الدقائق الدولية",
+    "amount": "المبلغ",
+    "show": "عرض",
+    "ofTotal": "من اصل",
+    "client": "العميل"
+  },
+  "numberHeader": {
+    "status": "قيد الإستخدام",
+    "protocolName": "اسم البروتوكول",
+    "country": "الدوله",
+    "currentClient": "العميل الحالي",
+    "extensionsCount": "عدد الإمتدادات",
+    "lastShipmentDate": "تاريخ آخر شحنة",
+    "currentBalance": "الرصيد الحالي",
+    "clientBalance": "الرصيد المستخدم للعميل الحالي",
+    "totalBalance": "الرصيد المستخدم للرقم ككل",
+    "edit": "تعديل",
+    "cancelAppointment": "الغاء التعيين"
+  },
+  "footer": {
+    "createdBy": "تم الأإنشاء بواسطة",
+    "creatorName": "عبدالرحيم إسماعيل ناصف",
+    "creationDate": "تاريخ الإنشاء"
+  }
+}

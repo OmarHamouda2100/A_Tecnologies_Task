@@ -1,0 +1,217 @@
+.section .holder .info p {
+  margin-left: 10px;
+}
+
+.section .box {
+  position: relative;
+}
+
+.box p:last-child img.logo {
+  margin-left: 0;
+  margin-right: 8px;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.section .box p:last-child img:last-of-type {
+  margin-right: 8px;
+}
+
+.section .holder .info span,
+.section .box p:last-child {
+  direction: rtl;
+}
+
+.section .holder .icons i {
+  color: rgba(107, 114, 128, 1);
+  transition: 0.3s;
+}
+
+.section .holder .icons button i:hover {
+  color: rgba(62, 151, 255, 1);
+}
+
+.section .holder .icons button {
+  background-color: transparent;
+  border: none;
+}
+
+.section .sub {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(234, 236, 240, 1);
+  border-radius: 4px;
+  padding: 8px;
+  min-width: 125px;
+  max-width: 200px;
+  z-index: 66666;
+  transition: 0.3s;
+  text-align: center;
+  overflow-x: auto;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+
+.sub {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-15px);
+  position: absolute; /* Ensures it doesn't take up space when hidden */
+}
+
+/* When visible, apply the fadeSlideIn animation */
+.sub.show {
+  visibility: visible;
+  animation: fadeSlideIn 0.3s ease-in-out forwards;
+}
+
+/* When hidden, apply the fadeSlideOut animation */
+.sub:not(.show) {
+  animation: fadeSlideOut 0.3s ease-in-out forwards;
+}
+
+/* Adjust movement for LTR and RTL */
+.sub-left {
+  transform: translateX(-15px);
+}
+
+.sub-right {
+  transform: translateX(15px);
+}
+
+.show.sub-left {
+  animation: fadeSlideIn 0.3s ease-in-out forwards;
+}
+
+.show.sub-right {
+  animation: fadeSlideIn 0.3s ease-in-out forwards;
+}
+
+
+.sub-right {
+  left: 20px;
+  right: auto;
+}
+
+.sub-left {
+  right: 20px;
+  left: auto;
+}
+
+.section .sub p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.section .sub p:last-child,
+.section .sub p:last-child i {
+  color: rgba(255, 75, 85, 1);
+}
+
+.section .sub p:hover {
+  background-color: rgba(234, 236, 240, 1);
+}
+
+.section .holder .info p {
+  background-color: rgba(72, 178, 154, 1);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 14.4px;
+  border: none;
+  padding: 6px 16px;
+  display: inline-block;
+}
+
+.section .holder .info span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--primary-color);
+}
+
+.section .box p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.74px;
+}
+
+.section .box p:first-child {
+  color: var(--header-color);
+}
+
+.section .box p:last-child {
+  color: rgba(28, 28, 40, 1);
+  text-align: center;
+}
+
+.section .box p:last-child img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .section .row .box {
+    margin-bottom: 15px;
+  }
+
+  .section .box:not(:last-child)::after {
+    display: none;
+  }
+
+}
+
+[dir="ltr"] .section .holder {
+  flex-direction: row;
+}
+
+[dir="ltr"] .section .holder .info p {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+[dir="ltr"] .section .box:not(:last-child)::after {
+  right: 10px;
+}
+
+[dir="rtl"] .section .box:not(:last-child)::after {
+  left: 10px;
+}
+
+[dir="ltr"] .section .box p:last-child img {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+@media (max-width: 300px) {
+  .section .holder .info span {
+    font-size: 15px;
+  }
+
+  .section .holder .info p {
+    padding: 6px;
+  }
+}

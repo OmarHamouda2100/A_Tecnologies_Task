@@ -1,0 +1,35 @@
+{
+  "numberParent": {
+    "title": "View Number",
+    "langButton": "عربي"
+  },
+  "table": {
+    "appointmentDate": "Appointment Date",
+    "cancelAppointmentDate": "Cancel Appointment Date",
+    "responsibleAppointment": "Responsible for Appointment",
+    "localMins": "Local Minutes",
+    "internationalMins": "International Minutes",
+    "amount": "Amount",
+    "show": "Show",
+    "ofTotal": "of total",
+    "client": "Client"
+  },
+  "numberHeader": {
+    "status": "In Use",
+    "protocolName": "Protocol Name",
+    "country": "Country",
+    "currentClient": "Current Client",
+    "extensionsCount": "Extensions Count",
+    "lastShipmentDate": "Last Shipment Date",
+    "currentBalance": "Current Balance",
+    "clientBalance": "Client Balance",
+    "totalBalance": "Total Balance",
+    "edit": "Edit",
+    "cancelAppointment": "Delete"
+  },
+  "footer": {
+    "createdBy": "Created by",
+    "creatorName": "Abdulrahim Ismail Nasef",
+    "creationDate": "Creation Date"
+  }
+}

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Neo Sans Arabic';
+  src: url('/assets/fonts/NeoSansArabic.woff2') format('woff2'),
+       url('/assets/fonts/NeoSansArabic.woff') format('woff'),
+       url('/assets/fonts/NeoSansArabic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: rgba(28, 28, 40, 1);
+  --header-color: rgba(107, 114, 128, 1);
+}
+
+* {
+  font-family: 'Neo Sans Arabic', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(248, 248, 248, 1);
+}
+
+.truncated-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  vertical-align: middle;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(236, 240, 245, 1);
+  border-radius: 6px;
+  padding: 12px;
+}

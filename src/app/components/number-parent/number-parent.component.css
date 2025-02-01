@@ -1,0 +1,73 @@
+.header {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(228, 228, 228, 1);
+  border-radius: 0px 8px;
+  height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header .first svg {
+  background-color: rgba(62, 151, 255, 0.1);
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.header .first svg path {
+  fill: rgba(62, 151, 255, 1);
+}
+
+.header h3 {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(28, 28, 40, 1);
+  margin: 0;
+  margin-left: 8px;
+}
+
+.header .icons i {
+  transition: 0.3s;
+  color: rgba(28, 28, 40, 1);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header .icons i:hover {
+  color: rgba(255, 75, 85, 1);
+}
+
+.icons button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: rgba(62, 151, 255, 1);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* RTL*/
+[dir="rtl"] .header {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .header .d-flex {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header .icons {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+[dir="ltr"] .header {
+  direction: ltr;
+  text-align: left;
+}
+
+[dir="ltr"] .header .icons {
+  margin-right: auto;
+  margin-left: 0;
+}

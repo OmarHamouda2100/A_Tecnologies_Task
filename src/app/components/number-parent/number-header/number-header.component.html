@@ -1,0 +1,95 @@
+<div class="section mt-3">
+  <div class="holder d-flex align-items-center justify-content-between">
+    <div class="info d-flex align-items-baseline gap-2">
+      <span>012345678910</span>
+      <p>{{ 'numberHeader.status' | translate }}</p>
+    </div>
+
+    <div class="icons position-relative">
+      <button (click)="show()" [class.display]>
+        <i class="fa-solid fa-ellipsis"></i>
+      </button>
+
+      <div
+        class="sub"
+        [class.sub-right]="transService.currentLang === 'ar'"
+        [class.sub-left]="transService.currentLang === 'en'"
+        [class.show]="showsub" >
+        <p style="cursor: pointer;" (click)="onedite()">
+          {{ 'numberHeader.edit' | translate }} <i class="ms-2 fa-solid fa-pencil"></i>
+        </p>
+        <p style="cursor: pointer;" (click)="ondelete()">
+          {{ 'numberHeader.cancelAppointment' | translate }} <i class="ms-2 fa-solid fa-comment-slash"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- row1 -->
+  <div class="row mt-5">
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.protocolName' | translate }}</p>
+        <p>{{ numbers[0].protocall }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.country' | translate }}</p>
+        <p>
+          <img class="img-fluid ms-2" [src]="numbers[0].flag" alt="">
+          {{ numbers[0].country }}
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.currentClient' | translate }}</p>
+        <p class="truncated-text" [title]="numbers[0].client">
+          <img class="logo img-fluid ms-2" src="./images/logo.JPG" alt="">
+          {{ numbers[0].client }}
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.extensionsCount' | translate }}</p>
+        <p>{{ numbers[0].extensions }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- row2 -->
+  <div class="row mt-5" >
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.lastShipmentDate' | translate }}</p>
+        <p>{{ numbers[0].date | date:'yyyy-MM-dd' }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.currentBalance' | translate }}</p>
+        <p>{{ numbers[0].balance }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.clientBalance' | translate }}</p>
+        <p>{{ numbers[0].clientBalance }}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+      <div class="box text-center">
+        <p>{{ 'numberHeader.totalBalance' | translate }}</p>
+        <p>{{ numbers[0].totalBalance }}</p>
+      </div>
+    </div>
+  </div>
+</div>

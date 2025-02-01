@@ -1,0 +1,79 @@
+.section img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.section .date p:first-child {
+  color: var(--header-color);
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.section .date p:last-child {
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+.section .date p:last-child span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-left: 5px;
+  background-color: rgba(232, 232, 232, 1);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.section .creator div p:first-child {
+  font-size: 11px;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.created {
+  text-align: center !important;
+}
+
+/* LTR Adjustments */
+[dir="ltr"] .section img {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+[dir="ltr"] .section .date p:last-child {
+  text-align: center;
+}
+
+[dir="ltr"] .section .date p:last-child span {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 300px) {
+  .section .date p:first-child,
+  .section .date p:last-child,
+  [dir="ltr"] .section .date p:first-child {
+    text-align: center;
+    font-size: 11px; /* Further reduce for readability */
+  }
+
+  .section .creator div p:first-child {
+    font-size: 10px;
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  .creator {
+    display: flex;
+    align-items: start;
+  }
+
+
+}

@@ -1,0 +1,14 @@
+<div class="section mt-3 d-flex align-items-center justify-content-between flex-wrap">
+  <div class="creator d-flex align-items-start">
+    <img class=".img-fluid ms-2" src="images/avatar.png" alt="">
+    <div>
+      <p [class.created]="transService.currentLang === 'en'">{{ 'footer.createdBy' | translate }}</p>
+      <p>{{ 'footer.creatorName' | translate }}</p>
+    </div>
+  </div>
+
+  <div class="date">
+    <p class="text-end">{{ 'footer.creationDate' | translate }}</p>
+    <p>04:30<span class="me-1 ms-1"></span>{{ "01/12/2024" | date:'yyyy-MM-dd' }}</p>
+  </div>
+</div>
